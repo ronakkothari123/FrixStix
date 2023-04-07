@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "FrixStix Classic",
+      "image": "./images/classic-box.jpg",
+      "price": 3.49,
+      "description": "The Classic FrixStix Feel",
+      "calorieCount": 50
+    },
+    {
+      "name": "FrixStix Cheesy",
+      "image": "./images/cheesy-box.jpg",
+      "price": 3.99,
+      "description": "Insert Cheesy Joke Here",
+      "calorieCount": 75
+    },
+    {
+      "name": "FrixStix Jalapeño",
+      "image": "./images/spicy-box.jpg",
+      "price": 3.99,
+      "description": "Feel The Burn",
+      "calorieCount": 65
+    },
+    {
+      "name": "FrixStix BarbieQ",
+      "image": "./images/bbq-box.jpg",
+      "price": 4.49,
+      "description": "In a Barbie World",
+      "calorieCount": 75
+    }
+  ]
+}
