@@ -128,7 +128,7 @@ body * {
     gap:24px;
 }
 
-#cart-products > div{
+#cart-products > div:not(#cart-no-products){
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -136,23 +136,41 @@ body * {
     width:100%;
 }
 
-#cart-products > div > div{
+#cart-no-products{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    border:3px solid black;
+    padding:18px 0;
+    border-radius:6px;
+}
+
+#cart-no-products > p{
+    color:gray;
+    margin:0;
+    font-size:18px;
+    text-align:center;
+}
+
+#cart-products > div:not(#cart-no-products) > div:first-of-type{
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:flex-start;
-    gap:12px;
+    gap:24px;
 }
 
-#cart-products > div > div > div{
+#cart-products > div:not(#cart-no-products) > div:first-of-type > div:first-of-type{
     position:relative;
 }
 
-#cart-products > div > div > div > img{
+#cart-products > div:not(#cart-no-products) > div:first-of-type > div:first-of-type > img{
     height:64px;
 }
 
-#cart-products > div > div > div > p{
+#cart-products > div:not(#cart-no-products) > div:first-of-type > div:first-of-type > p{
     position:absolute;
     top:-12px;
     right:-12px;
@@ -168,12 +186,37 @@ body * {
     border-radius:4px;
 }
 
-#cart-products > div > div > h1{
+#cart-products > div:not(#cart-no-products) > div:first-of-type > div:last-of-type > h1{
     font-size:20px;
     margin:0;
 }
 
-#cart-products > div > p{
+#cart-products > div:not(#cart-no-products) > div:first-of-type > div:last-of-type > p{
+    font-size:14px;
+    color:gray;
+    margin:0;
+}
+
+#cart-products > div:not(#cart-no-products) > div:last-of-type{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-end;
+    gap:12px;
+}
+
+#cart-products > div:not(#cart-no-products) > div:last-of-type > img{
+    height:16px;
+    cursor:pointer;
+    filter:invert(0.25);
+    transition-duration:250ms;
+}
+
+#cart-products > div:not(#cart-no-products) > div:last-of-type > img:hover{
+    filter:invert(0);
+}
+
+#cart-products > div:not(#cart-no-products) > div:last-of-type > p{
     font-size:18px;
 }
 
@@ -256,6 +299,14 @@ body * {
     font-weight:700;
     cursor:pointer;
     text-decoration:none;
+}
+
+#cart-no-products.inactive-modal{
+    display:none
+}
+
+#cart-modal > div:last-of-type > button.inactive-modal. #cart-modal > div:last-of-type > a.inactive-modal{
+    display:none;
 }
 
 .inactive-modal{
