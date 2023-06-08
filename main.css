@@ -18,6 +18,10 @@ body * {
     font-family: 'Urbanist', sans-serif;
 }
 
+#prefix{
+    display:none;
+}
+
 #navbar{
     display:flex;
     flex-direction:row;
@@ -114,6 +118,7 @@ body * {
     background:white;
     width:384px;
     transition-duration:250ms;
+    z-index:5;
 }
 
 #cart-modal > div{

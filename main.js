@@ -32,6 +32,11 @@ function parseData(products) {
 
     console.log(cartItems);
 
+    const parent = document.getElementById("cart-products")
+    while (parent.firstChild) {
+        parent.firstChild.remove()
+    }
+
     if(cartItems.length > 0){
         document.getElementById("cart-browse").classList.add("inactive-modal");
         document.getElementById("cart-place-order").classList.remove("inactive-modal");
@@ -54,7 +59,7 @@ function parseData(products) {
         let found = false;
 
         for(let j = 0; j < newCartItems.length; j++){
-            if(newCartItems[j][0] == cartItems[i]){
+            if(newCartItems[j][0] === cartItems[i]){
                 found = true;
                 newCartItems[j][1]++;
             }
@@ -80,7 +85,7 @@ function parseData(products) {
         let trash = document.createElement("img");
         let price = document.createElement("p");
 
-        trash.src = "icons/trash.svg";
+        trash.src = document.getElementById("prefix").textContent + "icons/trash.svg";
         trash.addEventListener("click", function(e){
             let originalCartItems = JSON.parse(localStorage.getItem("cart"));
             originalCartItems.splice(originalCartItems.indexOf(cartItems[i][0]), 1)
@@ -89,7 +94,7 @@ function parseData(products) {
             initialize();
         })
 
-        price.innerHTML = "$" + products[cartItems[i][0]].price * cartItems[i][1];
+        price.innerHTML = "$" + Math.ceil(products[cartItems[i][0]].price * cartItems[i][1] * 100)/100;
         totalPrice += products[cartItems[i][0]].price * cartItems[i][1];
 
         let pictureDiv = document.createElement("div");
@@ -98,7 +103,7 @@ function parseData(products) {
         let img = document.createElement("img");
         let quantity = document.createElement("p");
 
-        img.src = products[cartItems[i][0]].image;
+        img.src = document.getElementById("prefix").textContent + products[cartItems[i][0]].image;
         quantity.innerHTML = cartItems[i][1];
 
         let name = document.createElement("h1");
@@ -119,13 +124,13 @@ function parseData(products) {
         document.getElementById("cart-products").appendChild(newDiv);
     }
 
-    document.getElementById("cart-subtotal").innerHTML = "$" + totalPrice;
+    document.getElementById("cart-subtotal").innerHTML = "$" + Math.ceil(totalPrice * 100)/100;
     document.getElementById("cart-shipping").innerHTML = "$" + Math.ceil(totalPrice * 8)/100;
     document.getElementById("cart-total-price").innerHTML = "$" + Math.ceil(totalPrice * 108)/100;
 }
 
 function initialize(){
-    fetch("./products.json").then(function (response) {
+    fetch(`${document.getElementById("prefix").textContent}products.json`).then(function (response) {
         return response.json();
     }).then(function (data) {
         parseData(data)

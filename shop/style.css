@@ -1,0 +1,151 @@
+#best-deal-container{
+    position:relative;
+    background:var(--light-accent);
+    width:calc(100vw - 256px);
+    margin:0 128px;
+    height:384px;
+    border-radius:12px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+#best-deal-container > img{
+    position:absolute;
+    right:-128px;
+    bottom:-320px;
+    height:720px;
+}
+
+#best-deal-container > div{
+    position:absolute;
+    left:48px;
+    width:calc(50vw - 256px);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:6px;
+}
+
+#best-deal-container > div > h1{
+    font-size:64px;
+    margin:0;
+}
+
+#best-deal-container > div > p{
+    font-size:16px;
+    margin: 0 0 24px;
+}
+
+#best-deal-container > div > button {
+    height: 48px;
+    width: 192px;
+    background: white;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#products-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:64px 128px;
+    width:calc(100vw - 256px);
+    gap:6px;
+}
+
+#products-container > h1{
+    font-size:48px;
+    margin:0;
+}
+
+#products-container > p{
+    margin:0 0 24px;
+    font-size:14px;
+}
+
+#products-container > div{
+    width:75%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:24px;
+}
+
+#products-container > div > div{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    padding:24px;
+}
+
+#products-container > div > div > div:first-of-type{
+    width:256px;
+    height:256px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:12px;
+    border-radius:12px;
+}
+
+#products-container > div > div > div:first-of-type > img{
+    width:208px;
+}
+
+#products-container > div > div > h1{
+    margin:0;
+    font-size:18px;
+}
+
+#products-container > div > div > p{
+    margin:0;
+    font-size:14px;
+    color:gray;
+}
+
+#products-container > div > div > div:last-of-type{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    width:256px;
+    margin-top:12px;
+}
+
+#products-container > div > div > div:last-of-type > h1{
+    font-size:24px;
+    margin:0;
+}
+
+#products-container > div > div > div:last-of-type > button{
+    height:36px;
+    width:36px;
+    background:var(--dark-gray);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+
+#products-container > div > div > div:last-of-type > button > img{
+    height:18px;
+    filter:invert(1);
+}

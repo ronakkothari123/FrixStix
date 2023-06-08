@@ -5,20 +5,35 @@
       "image": "images/cheese-bg-less.png",
       "price": 3.99,
       "description": "Cheesier Than a Dad Joke",
-      "calorieCount": 75
+      "calorieCount": 75,
+      "color1": "#c82e04",
+      "color2": "#e3a826"
     },
     {
       "name": "FrixStix Air",
       "image": "images/spicy-bg-less.png",
       "price": 3.99,
       "description": "Smoking Hot Like Me",
-      "calorieCount": 65
+      "calorieCount": 65,
+      "color1": "#9c1a08",
+      "color2": "#f8846d"
+    },
+    {
+      "name": "FrixStix Air",
+      "image": "images/vegetables-bg-less.png",
+      "price": 4.99,
+      "description": "The Vegetables have Vegeturned",
+      "calorieCount": 65,
+      "color1": "#5cc0b4",
+      "color2": "#436753"
     },
     {
       "name": "FrixStix Collection",
-      "image": "images/.jpg",
-      "price": 4.49,
-      "calorieCount": 400
+      "image": "images/collection-bg-less.png",
+      "price": 18.99,
+      "calorieCount": 400,
+      "color1": "#2e6f95",
+      "color2": "#222216"
     }
   ]
 }

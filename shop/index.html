@@ -7,8 +7,38 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../icons/icon.png">
+
+    <script src="../main.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="prefix">../</div>
+    <div id="cart-modal" class="inactive-modal">
+        <div id="cart-products"></div>
+        <div>
+            <div class="cart-break"></div>
+            <div class="cart-price-category" style="margin-bottom:12px;">
+                <p>Subtotal</p>
+                <p id="cart-subtotal">$0.00</p>
+            </div>
+            <div class="cart-price-category">
+                <p>Shipping</p>
+                <p id="cart-shipping">$0.00</p>
+            </div>
+            <div class="cart-break"></div>
+        </div>
+        <div>
+            <p>Total</p>
+            <div>
+                <h2>USD</h2>
+                <h1 id="cart-total-price">$0.00</h1>
+            </div>
+        </div>
+        <div>
+            <button id="cart-place-order">Place Order</button>
+            <a href="../shop/" id="cart-browse">Browse FrixStix</a>
+        </div>
+    </div>
     <div id="navbar">
         <div id="navbar-left">
             <img src="../icons/icon.png" alt="" onclick="location.href='../'">
@@ -19,13 +49,26 @@
         </div>
         <div id="navbar-middle">
             <a href="../shop/">Shop All</a>
-            <a href="../about/">About Us</a>
+            <!--<a href="../about/">About Us</a>-->
         </div>
         <div id="navbar-right">
             <input placeholder="Search Fricking Anything" id="navbar-input" type="text" class="inactive-input">
             <img src="../icons/search.svg" alt="Search" id="navbar-search">
-            <a href="../cart/"><img src="../icons/cart.svg" alt="Cart"></a>
+            <img src="../icons/cart.svg" alt="Cart" id="navbar-cart">
         </div>
+    </div>
+    <div id="best-deal-container">
+        <div>
+            <h1>FrixStix Ultimate Collection</h1>
+            <p>Every single flavor of FrixStix all in one amazing bundle</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+        <img src="../images/collection-bg-less.png" alt="">
+    </div>
+    <div id="products-container">
+        <h1>Shop all Products</h1>
+        <p>Fricking Delicious and Fricking Healthy. What more could you want?</p>
+        <div id="products-main"></div>
     </div>
 </body>
 </html>
