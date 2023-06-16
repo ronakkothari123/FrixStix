@@ -5,27 +5,50 @@
       "image": "images/cheese-bg-less.png",
       "price": 3.99,
       "description": "Cheesier Than a Dad Joke",
-      "calorieCount": 75,
+      "calorieCount": 55,
       "color1": "#c82e04",
-      "color2": "#e3a826"
+      "color2": "#e3a826",
+      "stock": false
     },
     {
       "name": "FrixStix Air",
       "image": "images/spicy-bg-less.png",
       "price": 3.99,
       "description": "Smoking Hot Like Me",
-      "calorieCount": 65,
+      "calorieCount": 45,
       "color1": "#9c1a08",
-      "color2": "#f8846d"
+      "color2": "#f8846d",
+      "stock": false
     },
     {
       "name": "FrixStix Air",
       "image": "images/vegetables-bg-less.png",
       "price": 4.99,
       "description": "The Vegetables have Vegeturned",
-      "calorieCount": 65,
+      "calorieCount": 45,
       "color1": "#5cc0b4",
-      "color2": "#436753"
+      "color2": "#436753",
+      "stock": false
+    },
+    {
+      "name": "FrixStix Air",
+      "image": "images/pepper-bg-less.png",
+      "price": 4.49,
+      "description": "Just Pepper",
+      "calorieCount": 45,
+      "color1": "#b7cce8",
+      "color2": "#66779b",
+      "stock": false
+    },
+    {
+      "name": "FrixStix Air",
+      "image": "images/garam-masala-bg-less.png",
+      "price": 4.99,
+      "description": "Garam Masala",
+      "calorieCount": 45,
+      "color1": "#ae3e71",
+      "color2": "#984b8d",
+      "stock": false
     },
     {
       "name": "FrixStix Collection",
@@ -33,7 +56,8 @@
       "price": 18.99,
       "calorieCount": 400,
       "color1": "#2e6f95",
-      "color2": "#222216"
+      "color2": "#222216",
+      "stock": false
     }
   ]
 }
