@@ -5,20 +5,22 @@
       "image": "images/cheese-bg-less.png",
       "price": 3.99,
       "description": "Cheesier Than a Dad Joke",
+      "tagline": "You heard that correct. Beware dad jokes everywhere!",
       "calorieCount": 55,
       "color1": "#c82e04",
       "color2": "#e3a826",
-      "stock": false
+      "stock": true
     },
     {
       "name": "FrixStix Air",
       "image": "images/spicy-bg-less.png",
-      "price": 3.99,
+      "price": 3.49,
       "description": "Smoking Hot Like Me",
+      "tagline": "It's not too spicy for you right? You can handle it right? Or are you \"chicken\"???",
       "calorieCount": 45,
       "color1": "#9c1a08",
       "color2": "#f8846d",
-      "stock": false
+      "stock": true
     },
     {
       "name": "FrixStix Air",
@@ -28,7 +30,7 @@
       "calorieCount": 45,
       "color1": "#5cc0b4",
       "color2": "#436753",
-      "stock": false
+      "stock": true
     },
     {
       "name": "FrixStix Air",
@@ -38,7 +40,7 @@
       "calorieCount": 45,
       "color1": "#b7cce8",
       "color2": "#66779b",
-      "stock": false
+      "stock": true
     },
     {
       "name": "FrixStix Air",
@@ -48,16 +50,17 @@
       "calorieCount": 45,
       "color1": "#ae3e71",
       "color2": "#984b8d",
-      "stock": false
+      "stock": true
     },
     {
       "name": "FrixStix Collection",
       "image": "images/collection-bg-less.png",
       "price": 18.99,
+      "tagline": "Now this is fricking delicious...",
       "calorieCount": 400,
       "color1": "#2e6f95",
       "color2": "#222216",
-      "stock": false
+      "stock": true
     }
   ]
 }
